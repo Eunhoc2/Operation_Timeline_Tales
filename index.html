@@ -3,207 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animated Timeline</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>Timeline Tales</title>
+
     <style>
-        body {
-            font-family: 'San Francisco', 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.5;
-            overflow-x: hidden; /* Prevents side-scrolling during animations */
-        }
-
-        .container {
-            padding: 2rem;
-            padding-bottom: 400px;
-            margin: 0 auto;
-            max-width: 800px;
-        }
-
-        .top-section {
-            text-align: center;
-            padding: 4rem 0;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .timeline {
-            position: relative;
-            min-height: 150px;
-        }
-
-        .timeline__line {
-            position: absolute;
-            z-index: 2;
-            left: calc(50% - 1px);
-            width: 2px;
-            top: -50px;
-            bottom: -50px;
-            background-color: #000;
-            display: none;
-        }
-
-        .timeline__line:before,
-        .timeline__line:after {
-            position: absolute;
-            display: block;
-            content: '';
-            height: 1rem;
-            width: 1rem;
-            border-radius: 50%;
-            background-color: #000;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
-        .timeline__line:after {
-            bottom: 0;
-        }
-
-        .timeline__section {
-            display: flex;
-            opacity: 0;
-            transform: translateX(-100%);
-            transition: 600ms ease;
-            position: relative;
-            z-index: 1;
-            margin: 50px 0;
-            padding: 1rem;
-            border-radius: 1rem;
-            align-items: center;
-            min-height: 300px;
-        }
-
-        .timeline__section:nth-child(odd) {
-            flex-direction: row-reverse;
-            transform: translateX(100%);
-        }
-
-        .timeline__section__bead {
-            position: absolute;
-            display: block;
-            height: 1rem;
-            width: 1rem;
-            border-radius: 50%;
-            background-color: #000;
-            left: 50%;
-            top: 20%;
-            transform: translateX(-50%);
-        }
-
-        .timeline__section__content {
-            width: calc(50% - 2rem);
-        }
-
-        /* State for when elements are scrolled into view */
-        .timeline__section.show-me {
-            transform: none;
-            opacity: 1;
+        /* Magic happens here */
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+        p {
+            font-family: Open Sans;
+            font-size: 17px;
+            padding: 5px;
+            text-indent: 40px;
+            /* margin-left: 50px;
+            margin-right: 50px; */
         }
     </style>
+
 </head>
 <body>
+    <p> For Professor Carter's lectures, the most intriguing element had to do with his ideas about how humans have thought about things. To me, his arguments went deeper into the thinkings and actions of humans, past and present. In addition, I felt these ideas were more nuanced than how others might have brought them up. Utilizing the works of Denise De Silva, Alexis Pauline Gumbs, and others, Professor Carter articulated a claim that felt very deep and, unsurprisingly, philosophical in nature. His lectures made me think of how humans have generated through time this extreme self belief that we are always isolated from the environment, that nature was simply the stage of a play in which we humans run and determine; in doing so, we had grown a perception of difference with separation. Professor Carter then referenced how many argued the idea of difference without separation, the idea that humans are tied to nature in many fundamental aspects, but this aspect is hiding in plain sight. To construct his argument, Professor Carter delved deep into philosophical analysis. Through the works of Lucretius along with others, he broke down the basic principles of how humans think and live. He connected many ideas that most of us would've taken for granted and picked up on these atomic symbols that transpired into a greater understanding of how the world runs and has changed over time. For my analysis of my primary source, I believe it would prove handy to also delve into this philosophical analysis to understand not just the “what” and the “how”, but also the “why”. Humans make decisions all the time to lead us down a certain path; I, thereby, believe the importance of looking back and seeing the path we took along with the paths that we forgoed. Overall, I would argue that “On the Nature of Things” by Lucretius was the most intriguing work that Professor Carter had assigned to us. While I initially struggled to properly grasp the concepts listed in the work, Professor Carter's explanations during lecture helped tie everything together in a fashion that made a light bulb turn on in my head. I personally have not read many works written prior to the the 19th century (the one exception being Shakespeare, which I was forced to read I might add), so reading a work by Lucretius is like a breath of fresh air (or, I guess, past air) as I get to discover these ideas of old that were long-forgotten by modern society. Back then, people lived differently, acted differently, and thought differently; thus it feels appropriate to appreciate these works for their values in teaching us, in the present, how we may be ought to think differently. Now, while I don't want to get ahead of myself, someplace else I find philosophical ideals playing into real life consequences involving the environment is the military. More specifically, I'm talking about military doctrine, a topic which, in simpler terms, outlines how certain militaries enact their offensive and defense strategies. The more appropriate term would be command philosophy, and this topic, in my opinion, I can connect between Professor Carter's lectures and methods of analysis to my upcoming Spring Research Paper. Some potential primary sources are military doctrine papers or other unclassified documents from the military, and I want to specifically use the U.S. military as they are not only arguably the most powerful military in the world right now, but my personal prowess in military knowledge primarily originates from the U.S. military and their assets. There are, also, many command philosophy documents online from various U.S. military branches, including the Air Force and Army.</p>
 
-<div class="container">
-    <div class="top-section">
-        <h1>Animated timeline</h1>
-        <p>Scroll down to see the magic happen. This timeline tracks events with a dynamic line and fading animations.</p>
-    </div>
 
-    <div class="timeline">
-        <div class="timeline__line"></div>
+    <p>I think the most interesting ideas coming from Professor Schields's lectures were the ways in which she incorporated oil, a somewhat mundane material humans use on a frequent basis, into a greater and broader idea about social behaviors and standards. Her lectures showed me how everything in life can be interconnected to anything else, that two things that we may consider vastly different in character can be together in value and effect. This interconnectedness, unsurprisingly, ties back to the environmental humanities as oil is no longer seen as merely a fossil fuel and a climate change aggressor, but its harmfulness is being tied to humanity. To make these connections and claims, Professor Schields used rhetorical analysis to find the smaller details hidden between the lines of both written and drawn works of history. Looking at the various petroleum advertisements were, therefore, pretty interesting to look at and peel apart the meaning contained within them. Likewise, I would like to utilize this rhetorical analysis strategy to my own primary source as I will certainly be looking at more historical documents regardless of what primary source I choose. When it comes to history, I've always liked to associate it as a huge and forever-continuous cause and effect chain. I believe, therefore, that it is prudent to analyze the primary source I get with the mind of its creator(s) in mind to extract a better meaning of the “why” and “how” of the document. In terms of a potential primary source document, one could be a U.S. General Accounting Office document from 1991 regarding the M1 Abrams main battle tank and its operating costs. This includes the fuel consumption, a topic that has heavily weighed on the M1's reputation due to its characteristic of having a gas turbine engine, a propulsion system powerful yet fuel hungry. While that document may offer good connections between the U.S. military and American petroleum, if I want to lean towards more of a visual analysis, something akin to the M1 Abrams magazine advertisement shown below can also be nice to overview.</p>
 
-        <div class="timeline__section">
-            <div class="timeline__section__bead"></div>
-            <div class="timeline__section__content">
-                <h2>1902</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim sunt modi qui cum eveniet magni iure laudantium vitae.</p>
-            </div>
-        </div>
 
-        <div class="timeline__section">
-            <div class="timeline__section__bead"></div>
-            <div class="timeline__section__content">
-                <h2>1934</h2>
-                <p>At corporis sequi porro doloremque obcaecati repudiandae nemo? Delectus, praesentium fuga?</p>
-            </div>
-        </div>
-
-        <div class="timeline__section">
-            <div class="timeline__section__bead"></div>
-            <div class="timeline__section__content">
-                <h2>1999</h2>
-                <p>Aut enim sunt modi qui cum eveniet magni iure laudantium vitae. At corporis sequi porro doloremque obcaecati repudiandae nemo?</p>
-            </div>
-        </div>
-
-        <div class="timeline__section">
-            <div class="timeline__section__bead"></div>
-            <div class="timeline__section__content">
-                <h2>2001</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, praesentium fuga!</p>
-            </div>
-        </div>
-
-        <div class="timeline__section">
-            <div class="timeline__section__bead"></div>
-            <div class="timeline__section__content">
-                <h2>2005</h2>
-                <p>Veni, vidi, vici. The final milestone in this specific journey of animated dots and lines.</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<script>
-    function qs(selector, all = false) {
-        return all ? document.querySelectorAll(selector) : document.querySelector(selector);
-    }
-
-    const sections = qs('.timeline__section', true);
-    const timeline = qs('.timeline');
-    const line = qs('.timeline__line');
-
-    line.style.bottom = `calc(100% - 20px)`;
-    let prevScrollY = window.scrollY;
-    let up, down;
-    let full = false;
-    let set = 0;
-    const targetY = window.innerHeight * 0.8;
-
-    function scrollHandler(e) {
-        const { scrollY } = window;
-        up = scrollY < prevScrollY;
-        down = !up;
-
-        const timelineRect = timeline.getBoundingClientRect();
-        const dist = targetY - timelineRect.top;
-
-        if (down && !full) {
-            set = Math.max(set, dist);
-            line.style.bottom = `calc(100% - ${set}px)`;
-        }
-
-        if (dist > timeline.offsetHeight + 50 && !full) {
-            full = true;
-            line.style.bottom = `-50px`;
-        }
-
-        sections.forEach(item => {
-            const rect = item.getBoundingClientRect();
-            if (rect.top + item.offsetHeight / 5 < targetY) {
-                item.classList.add('show-me');
-            }
-        });
-
-        prevScrollY = window.scrollY;
-    }
-
-    // Initialize
-    scrollHandler();
-    line.style.display = 'block';
-    window.addEventListener('scroll', scrollHandler);
-</script>
-
+    <p>In her lecture series, Professor Davis outlined the aspect of vulnerability. In my opinion, this offered me the most intriguing insight as when it comes to the human's relationship with the more-than-human, vulnerability wasn't something on my mind up until Professor Davis's lectures. In them, she analyzed how vulnerability to the environment was something that humans have gone through throughout time and they, consequently, had to rely on both the human and the more-than-human to protect themselves. She exemplifies this using Sir Gawain in the poem Sir Gawain and the Green Knight, and in doing so, she points out the idea of the buffered self, where one creates a boundary between themselves and the environment. In terms of methods of analysis, Professor Davis leaned towards a more narrative analysis as she had primarily focused on the storyline of Sir Gawain and the Green Knight, and reading the poem by itself was, in my opinion, a great adventure into an aging yet fundamental story regarding the human perception and interaction with the more-than-human. The narrative analysis Professor Davis used is also something that would be nice to apply to my Spring Research Paper. I think an ideal way of incorporating such would be to analyze a story/narrative told from a work connected to the U.S. military. Given that our military has been through a lot, the stories that could come out of it would be great to delve deep into. In terms of potential primary sources, one connecting the U.S. military to the environment and vulnerability is a Department of Defense Climate Adaptation Plan from 2021, which outlined how climate change has impacted U.S. military doctrine in consequence to the vulnerabilities such changes have on military logistics and equipment. I will note that this primary source cannot be used for any narrative analysis since it is a factual document rather than a story pertaining to the military. For a more narrative analysis, one work could be that of U.S. Army veteran Brian Turner's “Here, Bullet,” a poem associated with his time at war.</p>
 </body>
 </html>
